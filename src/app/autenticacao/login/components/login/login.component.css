@@ -9,3 +9,25 @@
     margin:auto;
     text-align: center;
 }
+
+/* Define as propriedades para a mensagem de erro */
+.error-section {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .error-icon {
+    color: red;
+    margin-right: 8px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+
+  .button-center {
+   margin: auto;
+   text-align: center;
+  }

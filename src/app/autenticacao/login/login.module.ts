@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule} from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
+import { LoginService } from './services/login.service';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -28,7 +30,11 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatButtonModule,
     MatTooltipModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule
+  ],
+  providers: [
+    LoginService
   ]
 })
 export class LoginModule { }
