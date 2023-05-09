@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
+import { Login } from '../../models/login.model';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -17,6 +18,7 @@ export class LoginComponent implements OnInit {
   
   
   ngOnInit(){
+    this.gerarForm();
     
   }
 
@@ -29,7 +31,12 @@ export class LoginComponent implements OnInit {
   }
 
   logar(){
-    
+    if(this.form.invalid){
+      return;
+    }
+
+    const login: Login = this.form.value;
+
   }
 
 }
