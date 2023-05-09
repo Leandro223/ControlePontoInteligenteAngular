@@ -5,9 +5,9 @@ import { LoginComponent } from './components/login/login.component';
 import { LogarComponent } from './components/logar.component';
 
 
-export const LoginRoutes = [
+export const LoginRoutes: Routes = [
     {
-        package: 'login',
+        path: 'login',
         component: LogarComponent,
         children: [{path: '', component: LoginComponent}]
     }
