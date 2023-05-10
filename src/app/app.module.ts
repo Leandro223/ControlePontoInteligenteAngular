@@ -9,6 +9,8 @@ import { LoginRoutingModule } from './autenticacao/login/login-routing.module';
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule} from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { CadastroPjModule } from './autenticacao/cadastro-pj/cadastro-pj.module';
+import { CadastroPjRoutingModule } from './autenticacao/cadastro-pj/cadastro-pj-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatToolbarModule,
     MatIconModule,
     MatTooltipModule,
+    CadastroPjModule,
+    CadastroPjRoutingModule,
     
 
     AppRoutingModule
