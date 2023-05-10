@@ -11,6 +11,11 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   sair(){
+    delete localStorage['acessToken'];
     this.router.navigate(['/']);
+  }
+
+  autenticado(): boolean{
+    return localStorage['acessToken'];
   }
 }
