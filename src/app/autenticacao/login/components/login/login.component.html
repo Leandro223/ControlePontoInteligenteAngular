@@ -34,12 +34,15 @@
         </mat-list-item>
 
 
+        <div class="error-section" *ngIf="form.get('email')?.errors && (form.get('email')?.touched && form.get('email')?.dirty) " class="error-message">
+            <mat-icon class="error-icon">error</mat-icon>
+            <span class="error-message">Email é obrigatório</span>
+        </div>
+
+
     </mat-list>
 
-    <div class="error-section" *ngIf="form.get('email')?.errors && (form.get('email')?.touched && form.get('email')?.dirty) " class="error-message">
-        <mat-icon class="error-icon">error</mat-icon>
-        <span class="error-message">Email é obrigatório</span>
-    </div>
+    
 
 </form>
 
