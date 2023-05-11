@@ -11,6 +11,11 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { CadastroPjModule } from './autenticacao/cadastro-pj/cadastro-pj.module';
 import { CadastroPjRoutingModule } from './autenticacao/cadastro-pj/cadastro-pj-routing.module';
+import { CadastroPfModule } from './autenticacao/cadastro-pf/cadastro-pf.module';
+import { CadastroPfRoutingModule } from './autenticacao/cadastro-pf/cadastro-pf-routing.module';
+
+
+
 
 @NgModule({
   declarations: [
@@ -26,10 +31,16 @@ import { CadastroPjRoutingModule } from './autenticacao/cadastro-pj/cadastro-pj-
     MatTooltipModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
+    CadastroPfModule,
+    CadastroPfRoutingModule,
+    
+    
     
 
     AppRoutingModule
   ],
+
+  
   providers: [],
   bootstrap: [AppComponent]
 })

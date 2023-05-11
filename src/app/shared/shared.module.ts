@@ -4,13 +4,16 @@ import { MascaraDirective } from './directives/mascara.directive';
 
 
 
+
 @NgModule({
   declarations: [
     MascaraDirective
+    
   ],
 
   exports: [
-    MascaraDirective
+    MascaraDirective,
+   
   ],
   imports: [
     CommonModule
