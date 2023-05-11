@@ -12,6 +12,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CadastroPfService } from './services/cadastro-pf.service';
 
 
 @NgModule({
@@ -31,6 +32,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     MatIconModule,
     MatSnackBarModule,
     SharedModule
+  ],
+  providers: [
+    CadastroPfService
   ]
 })
 export class CadastroPfModule { }

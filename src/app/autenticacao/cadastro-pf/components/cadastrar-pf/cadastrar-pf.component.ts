@@ -7,6 +7,7 @@ import { CpfValidator } from 'src/app/shared/validators/cpf.validator';
 import { CnpjValidator } from 'src/app/shared/validators/cnpj.validator';
 import { catchError } from 'rxjs';
 import { of } from 'rxjs';
+import { CadastroPfService } from '../../services/cadastro-pf.service';
 
 
 @Component({
@@ -18,7 +19,8 @@ export class CadastrarPfComponent implements OnInit {
   
   form: FormGroup;
 
-  constructor(private fb: FormBuilder, private snackbar: MatSnackBar, private router: Router){}
+  constructor(private fb: FormBuilder, private snackbar: MatSnackBar, private router: Router,
+              private cadastroPfService: CadastroPfService){}
   
   
   ngOnInit() {
