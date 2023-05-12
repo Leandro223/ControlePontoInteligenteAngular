@@ -13,6 +13,8 @@ import { CadastroPjModule } from './autenticacao/cadastro-pj/cadastro-pj.module'
 import { CadastroPjRoutingModule } from './autenticacao/cadastro-pj/cadastro-pj-routing.module';
 import { CadastroPfModule } from './autenticacao/cadastro-pf/cadastro-pf.module';
 import { CadastroPfRoutingModule } from './autenticacao/cadastro-pf/cadastro-pf-routing.module';
+import { FuncionarioModule } from './funcionario/funcionario.module';
+import { FuncionarioRoutingModule } from './funcionario/funcionario-routing.module';
 
 
 
@@ -33,6 +35,9 @@ import { CadastroPfRoutingModule } from './autenticacao/cadastro-pf/cadastro-pf-
     CadastroPjRoutingModule,
     CadastroPfModule,
     CadastroPfRoutingModule,
+    FuncionarioModule,
+    FuncionarioRoutingModule,
+
     
     
     
