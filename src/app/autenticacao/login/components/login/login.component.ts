@@ -50,10 +50,10 @@ export class LoginComponent implements OnInit {
           const userRoles = usuarioData.role;
           console.log(userRoles);
           if (usuarioData?.role === 'ROLE_ADMIN') {
-            //this.router.navigate(['/admin']);
+            this.router.navigate(['/admin']);
             alert('Deve redirecionar para pagina de admin');
           } else {
-            //this.router.navigate(['/funcionario']);
+            this.router.navigate(['/funcionario']);
             alert('Deve redirecionar para pagina de funcionario');
           }
         },

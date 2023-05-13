@@ -1,1 +1,46 @@
-<p>lancamento works!</p>
+<div class="container">
+    <mat-list>
+        <mat-list-item>
+            <a mat-button color="warn" routerLink="/funcionario/listagem">
+                Ver Lançamentos
+            </a>
+        </mat-list-item>
+
+        <mat-list-item>
+            <strong>Data: </strong> &nbsp; {{ dataAtual }}
+        </mat-list-item>
+
+        <mat-list-item>
+            <strong>Localização: </strong> &nbsp; {{ geoLocation }}
+            &nbsp;
+            <a target="_blank" *ngIf="geoLocation"
+            href="obterUrlMapa()">Abrir Mapa</a>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="exibirInicioTrabalho()">
+            <button mat-raised-button color="primary"
+            (click)="iniciarTrabalho()">Iniciar Trabalho</button>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="exibirTerminoTrabalho()">
+            <button mat-raised-button color="primary"
+            (click)="terminarTrabalho()">Terminar Trabalho</button>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="exibirInicioAlmoco()">
+            <button mat-raised-button color="primary"
+            (click)="iniciarAlmoco()">Iniciar Almoco</button>
+        </mat-list-item>
+
+        <mat-list-item *ngIf="exibirTerminoAlmoco()">
+            <button mat-raised-button color="primary"
+            (click)="terminarAlmoco()">Terminar Almoco</button>
+        </mat-list-item>
+
+
+    </mat-list>
+
+
+
+
+</div>

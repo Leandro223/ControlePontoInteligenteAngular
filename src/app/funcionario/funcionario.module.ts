@@ -17,6 +17,8 @@ import { MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginato
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from '@angular/material/card';
 import { SharedModule } from '../shared/shared.module';
+import { HttpUtilService } from '../shared/services/http-util.service';
+import { LancamentoService } from '../shared/services/lancamento.service';
 
 
 
@@ -42,6 +44,10 @@ import { SharedModule } from '../shared/shared.module';
     MatSortModule,
     MatCardModule,
     SharedModule
+  ],
+  providers: [
+    HttpUtilService,
+    LancamentoService
   ]
 })
 export class FuncionarioModule { }
