@@ -19,6 +19,7 @@ import { MatCardModule } from '@angular/material/card';
 import { SharedModule } from '../shared/shared.module';
 import { HttpUtilService } from '../shared/services/http-util.service';
 import { LancamentoService } from '../shared/services/lancamento.service';
+import { PtBrMatPaginatorIntl } from '../shared/pt-br-mat-paginator-intl';
 
 
 
@@ -47,7 +48,8 @@ import { LancamentoService } from '../shared/services/lancamento.service';
   ],
   providers: [
     HttpUtilService,
-    LancamentoService
+    LancamentoService,
+    {provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl}
   ]
 })
 export class FuncionarioModule { }
