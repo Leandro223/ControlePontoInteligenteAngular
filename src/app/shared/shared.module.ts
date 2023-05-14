@@ -18,7 +18,8 @@ import { DataPipe } from './pipes/data.pipe';
 
   exports: [
     MascaraDirective,
-    TipoPipe
+    TipoPipe,
+    DataPipe
    
   ],
   imports: [

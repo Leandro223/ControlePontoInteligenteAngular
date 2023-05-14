@@ -1,8 +1,9 @@
 <a mat-button color="warn" routerLink="/funcionario">
-    Adicionar lançamento
+    Adicionar lancamento
 </a>
 
 <mat-table [dataSource]="dataSource" matSort>
+
     <mat-header-row *matHeaderRowDef="colunas"></mat-header-row>
     <mat-row *matRowDef="let row; columns: colunas;"></mat-row>
 
@@ -11,7 +12,7 @@
             Data
         </mat-header-cell>
         <mat-cell *matCellDef="let lancamento">
-            {{ lancamento.data | data }}
+            {{ lancamento.data | data}}
         </mat-cell>
     </ng-container>
 
@@ -22,6 +23,7 @@
         <mat-cell *matCellDef="let lancamento">
             {{ lancamento.tipo | tipo}}
         </mat-cell>
+
     </ng-container>
 
     <ng-container matColumnDef="localizacao">
@@ -43,6 +45,3 @@
     [pageSize]="10"
     [pageSizeOptions]="[5, 10, 15, 25]">
 </mat-paginator>
-    
-    
-
