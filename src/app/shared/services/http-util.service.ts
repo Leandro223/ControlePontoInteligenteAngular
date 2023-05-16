@@ -37,4 +37,14 @@ export class HttpUtilService {
     return JSON.parse(atob(localStorage['acessToken'].split('.')[1]));
 
   }
+
+  obterIdEmpresa(){
+    if(!localStorage['acessToken']){
+      return '';
+    }
+
+    const dadosUsuario = this.obterDadosUsuario();
+
+    return dadosUsuario ? dadosUsuario.empresaId: '';
+  }
 }

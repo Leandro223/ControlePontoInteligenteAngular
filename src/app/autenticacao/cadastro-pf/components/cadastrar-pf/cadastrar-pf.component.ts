@@ -24,7 +24,9 @@ export class CadastrarPfComponent implements OnInit {
     private cadastroPfService: CadastroPfService
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.gerarForm();
+  }
 
   gerarForm() {
     this.form = this.fb.group({
@@ -32,7 +34,7 @@ export class CadastrarPfComponent implements OnInit {
       email: ['', [Validators.required, Validators.email]],
       senha: ['', [Validators.required, Validators.minLength(6)]],
       cpf: ['', [Validators.required, CpfValidator]],
-      cnpj: ['', [Validators.required, CnpjValidator]],
+      cnpj: ['', [Validators.required, CnpjValidator]]
     });
   }
 
