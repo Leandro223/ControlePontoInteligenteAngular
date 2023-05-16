@@ -1,0 +1,12 @@
+.center-container{
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-center{
+    text-align: center;
+    margin: auto;
+}
