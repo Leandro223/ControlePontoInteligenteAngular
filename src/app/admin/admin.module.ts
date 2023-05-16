@@ -25,6 +25,7 @@ import { SharedModule } from '../shared/shared.module';
 
 import { MatDialogModule} from '@angular/material/dialog';
 import { FuncionarioService } from '../shared/services/funcionario.service';
+import { AdminGuard } from './services/admin-guard.service';
 
 
 
@@ -65,7 +66,9 @@ import { FuncionarioService } from '../shared/services/funcionario.service';
     FuncionarioService,
 
     {provide: MAT_DATE_LOCALE, useValue: 'pt-BR'},
-    { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl}
-  ]
+    { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl},
+    AdminGuard
+  ],
+  entryComponents: [ ConfirmarDialog]
 })
 export class AdminModule { }

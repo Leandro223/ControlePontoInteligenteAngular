@@ -47,4 +47,13 @@ export class HttpUtilService {
 
     return dadosUsuario ? dadosUsuario.empresaId: '';
   }
+
+  obterPerfil(): string {
+    if(!localStorage['acessToken']){
+      return '';
+    }
+
+    const dadosUsuario = this.obterDadosUsuario();
+    return dadosUsuario ? dadosUsuario.role: '';
+  }
 }
