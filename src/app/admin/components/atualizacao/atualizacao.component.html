@@ -1,3 +1,7 @@
+<div class="center-container">
+
+
+
 <form [formGroup]="form" fxLayoutAlign="center" novalidate>
     <mat-list>
       <mat-list-item>
@@ -44,7 +48,7 @@
         </mat-form-field>
       </mat-list-item>
       
-      <mat-list-item fxLayoutAlign="center">
+      <mat-list-item class="text-center">
         <button mat-raised-button color="primary"
             [disabled]="form.invalid" 
             (click)="atualizar()">
@@ -57,3 +61,5 @@
       </mat-list-item>
     </mat-list> 
   </form>
+
+</div>
