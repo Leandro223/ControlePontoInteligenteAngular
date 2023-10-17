@@ -1,27 +1,47 @@
-# ControlePontoInteligente
+Controle de Ponto de Funcionários - Frontend
+Este é o frontend de uma aplicação Angular que se integra com uma API com o nome de repositorio aqui no git-hub como api-controle-ponto-inteligente. Com esta aplicação, os funcionários podem registrar seus pontos (entrada e saída) e os administradores podem gerenciar esses registros.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.6.
+Pré-requisitos
+Antes de começar, certifique-se de ter instalado o seguinte:
 
-## Development server
+Node.js: Certifique-se de que o Node.js está instalado em sua máquina.
+Angular CLI: Você precisará do Angular CLI para executar e desenvolver este projeto.
+Acesso à API: Garanta que você tenha a URL da API de controle de ponto de funcionários e que a mesma esteja funcionando.
+Instalação
+Clone este repositório:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+git clone https://github.com/seu-usuario/seu-projeto.git
+Navegue até a pasta do projeto:
 
-## Code scaffolding
+cd seu-projeto
+Instale as dependências do projeto:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+npm install
+Configuração
+Abra o arquivo src/environments/environment.ts e configure a URL da API de controle de ponto de funcionários:
 
-## Build
+typescript
+Copy code
+export const environment = {
+  production: false,
+  apiUrl: 'URL_DA_SUA_API_AQUI'
+};
+Verifique outras configurações no arquivo de ambiente, como variáveis de produção em src/environments/environment.prod.ts.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Execução
+Após a instalação e configuração, você pode executar o projeto localmente com o comando:
 
-## Running unit tests
+ng serve
+Isso iniciará o servidor de desenvolvimento. Abra seu navegador e acesse http://localhost:4200/ para visualizar a aplicação.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Como usar
+Os funcionários podem se autenticar na aplicação e registrar seus pontos de entrada e saída.
+Os administradores podem acessar funcionalidades adicionais para gerenciar os registros dos funcionários.
+Contribuições
+Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estas etapas:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Crie um fork do repositório.
+Faça as alterações necessárias em sua branch.
+Abra um pull request com uma descrição clara das alterações propostas.
+Licença
+Este projeto é distribuído sob a licença MIT. Sinta-se à vontade para usá-lo como base para seu próprio projeto.
