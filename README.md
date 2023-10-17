@@ -10,10 +10,9 @@ Acesso à API: Garanta que você tenha a URL da API de controle de ponto de func
 Instalação
 Clone este repositório:
 
-git clone https://github.com/seu-usuario/seu-projeto.git
 Navegue até a pasta do projeto:
 
-cd seu-projeto
+cd controle-ponto-inteligente
 Instale as dependências do projeto:
 
 npm install
