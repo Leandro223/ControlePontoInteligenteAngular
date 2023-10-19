@@ -1,4 +1,5 @@
-![controle_ponto_inteligente](https://github.com/Leandro223/ControlePontoInteligenteAngular/assets/29740781/e1f3b374-3e4c-4c48-9c9f-4784fb530a96)
+![ponto_inteigente1(1)](https://github.com/Leandro223/api-controle-ponto-inteligente/assets/29740781/3df77628-77c5-487c-8be7-9d59e14ca868)
+
 
 
 Controle de Ponto de Funcionários - Front End
@@ -45,8 +46,13 @@ ng serve
 Isso iniciará o servidor de desenvolvimento. Abra seu navegador e acesse http://localhost:4200/ para visualizar a aplicação.
 
 Como usar
-Os funcionários podem se autenticar na aplicação e registrar seus pontos de entrada e saída.![ponto_inteligente2](https://github.com/Leandro223/ControlePontoInteligenteAngular/assets/29740781/db1f39e7-eefc-4098-9d64-684233e24b38)
-![ponto_inteligente3](https://github.com/Leandro223/ControlePontoInteligenteAngular/assets/29740781/d2991873-7d80-4d2c-8ed3-30c8cf5b7a86)
+Os funcionários podem se autenticar na aplicação e registrar seus pontos de entrada e saída.
+
+![2 (1)](https://github.com/Leandro223/api-controle-ponto-inteligente/assets/29740781/93fdfc22-1d6d-4574-86b7-df4b02a470d4)
+
+
+![3](https://github.com/Leandro223/api-controle-ponto-inteligente/assets/29740781/01f924f5-0bc6-4f24-b445-8ca45ce17a5d)
+
 
 Os administradores podem acessar funcionalidades adicionais para gerenciar os registros dos funcionários.
 Contribuições
